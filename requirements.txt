@@ -15,7 +15,6 @@ packaging==21.3
 pandas==1.4.4
 pluggy==1.0.0
 py==1.11.0
-pydantic==1.10.2
 pyparsing==3.0.9
 pyshorteners==1.0.1
 pytest==7.1.3

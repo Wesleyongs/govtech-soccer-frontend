@@ -31,3 +31,7 @@ def request_delete(url, message):
         st.success("Sucessfully Deleted")
     else:
         st.warning(res.status_code, message)
+        
+def clear_text():
+    st.session_state["registrations_input"] = ""
+    st.session_state["matches_input"] = ""
