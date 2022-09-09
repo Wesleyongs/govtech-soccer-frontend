@@ -2,6 +2,7 @@ import requests
 import streamlit as st
 import json
 
+#
 def requests_post(url, params):
     x = requests.post(url, params=params)
     
@@ -9,8 +10,7 @@ def requests_post(url, params):
         st.success("Here are the results")
         return x.json()
     else:
-        st.warning("There was an error")
-        st.exception(x.text)
+        st.warning("Invalid input!")
         
 # get persistent inputs from db
 def get_inputs(url, endpoint):
