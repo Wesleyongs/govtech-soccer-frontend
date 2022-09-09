@@ -6,7 +6,7 @@ import datetime as dt
 
 URL = 'http://ec2-13-212-176-7.ap-southeast-1.compute.amazonaws.com/Soccer/'
 HELP_MESSAGE = "Data only persist after pressing submit, try changing some values, press submit and refresh the page"
-st.set_page_config(layout="wide", page_title="Govtech Soccer Event")
+st.set_page_config(layout="wide", page_title="Govtech Soccer Event", page_icon ="soccer_ball.png")
 
 
 def app():
@@ -24,6 +24,7 @@ def app():
     > 1. Initial input fields are loaded from db
     > 2. Upon submit, all inputs are saved to database and overwrite previous entries
     > 3. Delete will remove all entries from db, when refreshed input fields will be empty
+    > 4. Use on any device! This app is web responsive
     
     Created by [Wesley Ong](https://wesleyongs.com/).
     """
