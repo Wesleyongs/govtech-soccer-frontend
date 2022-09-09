@@ -23,6 +23,7 @@ def app():
     > 1. Initial input fields are loaded from db
     > 2. Upon submit, all inputs are saved to database and overwrite previous entries
     > 3. Delete will remove all entries from db, when refreshed input fields will be empty
+    
     Created by [Wesley Ong](https://wesleyongs.com/).
     """
     )
