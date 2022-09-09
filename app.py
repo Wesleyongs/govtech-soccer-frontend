@@ -3,7 +3,6 @@ import pandas as pd
 import numpy as np
 from utils import requests_post, get_inputs, request_delete
 import datetime as dt
-import requests
 
 URL="http://localhost:8000/Soccer/"
 HELP_MESSAGE="Data only persist after pressing submit, try changing some values, press submit and refresh the page"
