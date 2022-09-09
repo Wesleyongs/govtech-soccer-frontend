@@ -5,7 +5,7 @@ import numpy as np
 from utils import requests_post, get_inputs, request_delete, clear_text
 import datetime as dt
 
-URL = "http://localhost:8000/Soccer/"
+URL = 'http://ec2-13-212-176-7.ap-southeast-1.compute.amazonaws.com/Soccer/'
 HELP_MESSAGE = "Data only persist after pressing submit, try changing some values, press submit and refresh the page"
 st.set_page_config(layout="wide", page_title="Govtech Soccer Event")
 
