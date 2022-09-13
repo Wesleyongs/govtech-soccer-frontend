@@ -59,27 +59,28 @@ def app():
         df = pd.DataFrame(results)
         df["date"] = pd.to_datetime(df["date"])
         df["date"] = df["date"].dt.strftime("%d-%m")
-        st.write(
-            df[
-                [
-                    "group_number",
-                    "team_name",
-                    "normal_score",
-                    "team_score",
-                    "alternate_score",
-                    "date",
-                ]
-            ].sort_values(
-                by=[
-                    "group_number",
-                    "normal_score",
-                    "team_score",
-                    "alternate_score",
-                    "date",
-                ],
-                ascending=[True, False, False, False, True],
+        if not df.empty:
+            st.write(
+                df[
+                    [
+                        "group_number",
+                        "team_name",
+                        "normal_score",
+                        "team_score",
+                        "alternate_score",
+                        "date",
+                    ]
+                ].sort_values(
+                    by=[
+                        "group_number",
+                        "normal_score",
+                        "team_score",
+                        "alternate_score",
+                        "date",
+                    ],
+                    ascending=[True, False, False, False, True],
+                )
             )
-        )
         registrations_text = get_inputs(URL, "Registration/")
         matches_text = get_inputs(URL, "Match/")
 
