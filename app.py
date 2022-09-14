@@ -57,9 +57,9 @@ def app():
             {"registrations_text": registrations_input, "matches_text": matches_input},
         )
         df = pd.DataFrame(results)
-        df["date"] = pd.to_datetime(df["date"])
-        df["date"] = df["date"].dt.strftime("%d-%m")
         if not df.empty:
+            df["date"] = pd.to_datetime(df["date"])
+            df["date"] = df["date"].dt.strftime("%d-%m")
             st.write(
                 df[
                     [
