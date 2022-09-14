@@ -1,6 +1,6 @@
 # Govtech Soccer webapp
 
-[Streamlit frontend demo](https://wesleyongs-govtech-soccer-frontend-app-42cw17.streamlitapp.com/)
+[Frontend demo](https://wesleyongs-govtech-soccer-frontend-app-42cw17.streamlitapp.com/)
 
 [FastAPI backend repo](https://github.com/Wesleyongs/Govtech-FastAPI) \
 [FastAPI backend swagger](http://ec2-13-212-176-7.ap-southeast-1.compute.amazonaws.com/docs)
