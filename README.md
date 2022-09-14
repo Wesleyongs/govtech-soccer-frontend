@@ -1,4 +1,4 @@
-# URL shortener webapp
+# Govtech Soccer webapp
 
 [Streamlit frontend](https://wesleyongs-url-shortener-frontend-app-r9adc3.streamlitapp.com/) \
 [FastAPI backend](http://ec2-13-212-176-7.ap-southeast-1.compute.amazonaws.com/docs)
