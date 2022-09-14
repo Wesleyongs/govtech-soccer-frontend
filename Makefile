@@ -15,8 +15,8 @@ clean: ## Remove general artifact files
 
 venv: ## Create virtual environment if venv directory not present
 	`which python3.8` -m venv venv
-	venv/Scripts/pip install -U pip wheel --no-cache-dir
 	venv/Scripts/activate
+	pip install -r requirements.txt
 
 run: ## Run with dev dependencies
 	venv/Scripts/activate
